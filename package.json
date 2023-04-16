@@ -4,7 +4,11 @@
   "description": "A ToDo List Application",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "server-dev": "nodemon ./server/index.js",
+    "build-dev": "webpack --watch",
+    "build": "webpack",
+    "start": "node ./server/index.js"
   },
   "author": "",
   "license": "ISC",
