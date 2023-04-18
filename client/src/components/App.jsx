@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import TodoList from './TodoList.jsx';
 
 export default function App() {
+  const [items, setItems] = useState(["item1", "item2", "item3"]);
+
   return (
-    <h1>Hello World</h1>
+    <TodoList items={items} />
   );
 }
