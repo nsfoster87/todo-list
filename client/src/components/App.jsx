@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header.jsx';
 import TodoList from './TodoList.jsx';
+import AddItem from './AddItem.jsx';
 import data from '../../../exampleData/items.json';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
     <div className="app">
       <Header />
       <TodoList items={items} />
+      <AddItem />
     </div>
   );
 }
