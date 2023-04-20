@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Header from './Header.jsx';
 import TodoList from './TodoList.jsx';
+import data from '../../../exampleData/items.json';
 
 export default function App() {
-  const [items, setItems] = useState(["item1", "item2", "item3"]);
+  const [items, setItems] = useState(data);
 
   return (
     <div className="app">
